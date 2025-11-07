@@ -65,7 +65,7 @@ fun Formulir(
             Row {
                 jenis.forEach {
                     item->
-                    Row(verticalAlignment = Alignment.CenterHorizontally){
+                    Row(verticalAlignment = Alignment.CenterVertically){
                         RadioButton(
                             selected = false,
                             onClick = {item}
@@ -80,14 +80,6 @@ fun Formulir(
                 thickness = 1.dp,
                 color = Color.Red
             )
-//            OutlinedTextField(
-//                value = "",
-//                singleLine = true,
-//                modifier = Modifier
-//                    .width(width = 250.dp),
-//                Label =  {Text(text = "Alamat") },
-//                onValueChang = {},
-//            )
             OutlinedTextField(
                 value = "",
                 singleLine = true,
