@@ -31,7 +31,7 @@ import androidx.compose.ui.unit.dp
 import com.example.pertemuan6.R
 
 
-@OptIn(markerClass = ExperimentalMaterial3Api::class)
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun Formulir(
     jenis: List<String> = listOf("Laki-laki", "Perempuan"),
@@ -80,13 +80,21 @@ fun Formulir(
                 thickness = 1.dp,
                 color = Color.Red
             )
+//            OutlinedTextField(
+//                value = "",
+//                singleLine = true,
+//                modifier = Modifier
+//                    .width(width = 250.dp),
+//                Label =  {Text(text = "Alamat") },
+//                onValueChang = {},
+//            )
             OutlinedTextField(
                 value = "",
                 singleLine = true,
                 modifier = Modifier
-                    .width(width = 250.dp),
-                Label =  {Text(text = "Alamat") },
-                onValueChang = {},
+                    .width(250.dp),
+                label = { Text(text = "Alamat") },
+                onValueChange = { }
             )
             Spacer(modifier = Modifier.height(height = 30.dp))
             Button(
@@ -94,6 +102,8 @@ fun Formulir(
                     .padding(all = 25.dp),
                 onClick = onSubmitButtonClick
             ){
+                Text(text = stringResource(id = R.string.submit))
+            }
 
         }
     }
