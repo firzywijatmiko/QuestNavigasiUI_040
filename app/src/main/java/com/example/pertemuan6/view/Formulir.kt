@@ -56,18 +56,7 @@ fun Formulir(
             HorizontalDivider(modifier = Modifier
                 .padding(all = 20.dp)
                 .width(width = 250.dp), thickness = Thickness,color = Color.Red)
-            Row {
-                jenis.forEach {
-                    item->
-                    Row(verticalAlignment = Alignment.CenterHorizontally){
-                        RadioButton(
-                            selected = false,
-                            onClick = {item}
-                        )
-                        Text(text = item)
-                    }
-                }
-            }
+
             HorizontalDivider(modifier = Modifier
                 .padding(all = 20.dp)
                 .width(width = 250.dp),
