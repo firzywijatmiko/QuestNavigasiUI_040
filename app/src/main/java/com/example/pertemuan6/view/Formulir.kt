@@ -88,12 +88,7 @@ fun Formulir(
                 Label =  {Text(text = "Alamat") },
                 onValueChang = {},
             )
-            Spacer(modifier = Modifier.height(height = 30.dp))
-            Button(
-                modifier = Modifier.fillMaxWidth(fraction = 1f)
-                    .padding(all = 25.dp),
-                onClick = onSubmitButtonClick
-            ){
+
 
         }
     }
